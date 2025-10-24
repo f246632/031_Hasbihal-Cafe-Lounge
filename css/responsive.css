@@ -1,0 +1,376 @@
+/* ============================================
+   Hasbihal Cafe Lounge - Responsive Styles
+   Mobile-First Responsive Design
+   ============================================ */
+
+/* ===== Tablet Styles (768px and below) ===== */
+@media (max-width: 768px) {
+    /* Typography */
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--bg-white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 40px 0;
+        gap: 20px;
+        transition: left 0.3s ease;
+        box-shadow: var(--shadow-lg);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    /* Hero */
+    .hero {
+        height: 70vh;
+        min-height: 500px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Menu Grid */
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Reviews */
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Location */
+    .location-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .map-container {
+        min-height: 350px;
+    }
+
+    /* Contact */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-social {
+        align-items: center;
+    }
+
+    /* Modal */
+    .modal {
+        padding: 20px;
+    }
+
+    .modal-close {
+        top: 10px;
+        right: 20px;
+        font-size: 40px;
+    }
+}
+
+/* ===== Mobile Styles (480px and below) ===== */
+@media (max-width: 480px) {
+    /* Typography */
+    html {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Section Padding */
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    /* Navigation */
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .logo-subtitle {
+        font-size: 0.75rem;
+    }
+
+    /* Hero */
+    .hero {
+        height: 60vh;
+        min-height: 450px;
+    }
+
+    /* Feature Cards */
+    .feature-card {
+        padding: 20px;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+    }
+
+    /* Menu */
+    .menu-category {
+        padding: 20px;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
+
+    .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    /* Gallery */
+    .gallery-item {
+        aspect-ratio: 1/1;
+    }
+
+    /* Reviews */
+    .review-card {
+        padding: 20px;
+    }
+
+    .reviewer-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /* Location */
+    .info-card {
+        padding: 20px;
+    }
+
+    .map-container {
+        min-height: 300px;
+    }
+
+    /* Contact */
+    .social-link {
+        padding: 12px 15px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 0 15px;
+    }
+
+    .footer-content {
+        gap: 25px;
+    }
+}
+
+/* ===== Large Desktop (1440px and above) ===== */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.75rem;
+    }
+
+    .lead {
+        font-size: 1.5rem;
+    }
+}
+
+/* ===== Print Styles ===== */
+@media print {
+    .navbar,
+    .hero-buttons,
+    .scroll-indicator,
+    .mobile-menu-toggle,
+    .contact-form,
+    .social-links,
+    .gallery-overlay,
+    .modal {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 200px;
+        page-break-after: always;
+    }
+
+    .section-padding {
+        padding: 30px 0;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+}
+
+/* ===== Accessibility ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ===== High Contrast Mode ===== */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000;
+        --text-dark: #000;
+        --text-light: #fff;
+        --bg-light: #fff;
+        --border-color: #000;
+    }
+
+    .btn {
+        border-width: 3px;
+    }
+
+    .nav-link::after {
+        height: 3px;
+    }
+}
+
+/* ===== Dark Mode Support ===== */
+@media (prefers-color-scheme: dark) {
+    /* Optional: Add dark mode styles here if desired */
+    /* Currently maintaining light theme for cafe aesthetic */
+}
+
+/* ===== Landscape Orientation ===== */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+    }
+
+    .nav-menu {
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+}
+
+/* ===== Touch Device Optimizations ===== */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        padding: 16px 34px;
+        font-size: 1.05rem;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+    }
+
+    .gallery-overlay {
+        opacity: 0.3;
+    }
+
+    .feature-card:hover,
+    .menu-category:hover,
+    .review-card:hover,
+    .info-card:hover {
+        transform: none;
+    }
+}

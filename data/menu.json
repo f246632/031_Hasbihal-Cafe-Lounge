@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "name": "Shisha",
+      "items": [
+        {
+          "name": "Premium Shisha",
+          "description": "Hochwertige Wasserpfeifen mit verschiedenen Geschmacksrichtungen",
+          "price": "Auf Anfrage"
+        },
+        {
+          "name": "Fruchtmischungen",
+          "description": "Frische und exotische Fruchtaromen",
+          "price": "Auf Anfrage"
+        }
+      ]
+    },
+    {
+      "name": "Getränke",
+      "items": [
+        {
+          "name": "Türkischer Tee",
+          "description": "Traditioneller Schwarztee",
+          "price": "Auf Anfrage"
+        },
+        {
+          "name": "Türkischer Kaffee",
+          "description": "Authentisch zubereitet",
+          "price": "Auf Anfrage"
+        },
+        {
+          "name": "Softdrinks",
+          "description": "Verschiedene Erfrischungsgetränke",
+          "price": "Auf Anfrage"
+        }
+      ]
+    },
+    {
+      "name": "Snacks",
+      "items": [
+        {
+          "name": "Meze Platte",
+          "description": "Auswahl an orientalischen Vorspeisen",
+          "price": "Auf Anfrage"
+        },
+        {
+          "name": "Gebäck",
+          "description": "Frisches Baklava und türkische Spezialitäten",
+          "price": "Auf Anfrage"
+        }
+      ]
+    }
+  ]
+}

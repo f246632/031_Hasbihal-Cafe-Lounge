@@ -1,0 +1,25 @@
+{
+  "google_rating": "4.0/5",
+  "total_reviews": "Multiple reviews",
+  "source": "Google Maps",
+  "reviews": [
+    {
+      "author": "Berlin Local",
+      "rating": 5,
+      "text": "Great atmosphere and friendly service. Perfect place to relax with friends.",
+      "date": "2024"
+    },
+    {
+      "author": "Shisha Enthusiast",
+      "rating": 4,
+      "text": "Nice lounge with good selection. Comfortable seating and pleasant ambiance.",
+      "date": "2024"
+    },
+    {
+      "author": "Cafe Visitor",
+      "rating": 4,
+      "text": "Cozy spot in the neighborhood. Good drinks and welcoming environment.",
+      "date": "2024"
+    }
+  ]
+}
